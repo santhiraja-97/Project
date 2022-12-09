@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&family=Poppins:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--------------- logo ---------------------->
+    <div class="logo">
+        <img src="Name.png" alt="">
+    </div>
+
+     <!--------------- Navigation --------------->
+    <div class="nav">
+        <h6 class="home" id="homeN" href="#home" >Home</h6>
+        <h6 class="about" id="aboutN" href="#about">About me</h6>
+        <h6 class="skills" id="skillN" href="#skill" >Skills</h6>
+        <h6 class="contact" id="contactN" href="#contacts" >Contact me</h6>
+    </div>
+
+    <!---------------- Content --------------------->
+    <div class="content" id="">
+        <div class="contleft">
+             <!---------------- Home --------------------->
+            <div id="home" class="home">
+                <p>Welcome to my page</p>
+                <h4>Hi! I'm SANTHIRAJA</h5>
+                <h5>FRONTEND DEVELOPER</h6>
+                <h6>I'm an Front-End Developer from Tirunelveli, Tamilnadu.</h6>
+                <div class="btn">
+                    <button class="pbtn"><a href="https://github.com/santhiraja-97">Projects</a></button>
+                    <button class="rbtn"><a href="Resume.pdf">Resume</a></button>
+                </div>
+            </div>
+
+             <!---------------- About Me --------------------->
+            <div class="aboutme" id="about">
+                <h3>About me</h3>
+                <p>Highly motivated front-end Developer</p>
+                <p>Quick learner, I can adopt any condition</p>
+                <p>I like travelling</p>
+                <p>I’m willing to relocate anywhere</p>
+            </div>
+            <!------------------ Skills --------------------->
+            <div class="skill" id="skill">
+                <h3>Skills</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>Figma</p>
+                <p>Bootstrap</p>
+                <p>jQuery</p>
+                <p>Basic knowledge of C</p>
+                <p>Photoshop</p>
+            </div>
+             <!------------------ Contact --------------------->
+             <div class="contacts" id="contacts">
+                <h3>Contact me</h3>
+                <p>Phone no : +918610140170, +918438147153</p>
+                <p>Email ID : santhiraja97@gmail.com</p>
+                <p><a href="https://www.linkedin.com/in/santhi-raja-222617142">LinkedIn : https://www.linkedin.com/in/santhi-raja-222617142</a></p>
+                <p><a href="https://github.com/santhiraja-97">GitHub  : https://github.com/santhiraja-97</a></p>
+            </div>
+
+        </div>
+        <!------------------ contright picture --------------------->
+        <div class="contright">
+            <img src="Photo.png" alt="">
+            <p class="rec1"></p>
+            <p class="rec2"></p>
+            <p class="rec3"></p>
+            
+        </div>
+    </div>
+    
+
+
+
+    <script>
+    $(document).ready(function(){
+        $("#homeN").click(function(){
+            $("#about").hide();
+            $("#skill").hide();
+            $("#contacts").hide();
+            $("#home").show();
+        });
+        $("#aboutN").click(function(){
+            $("#home").hide();
+            $("#skill").hide();
+            $("#contacts").hide();
+            $("#about").show();
+        });
+        $("#skillN").click(function(){
+            $("#home").hide();
+            $("#skill").show();
+            $("#contacts").hide();
+            $("#about").hide();
+        });
+        $("#contactN").click(function(){
+            $("#home").hide();
+            $("#skill").hide();
+            $("#contacts").show();
+            $("#about").hide();
+        });
+    });
+        
+
+    </script>
+    
+</body>
+</html>

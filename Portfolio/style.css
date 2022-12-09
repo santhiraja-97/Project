@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #2E314E;
+}
+
+/*---------------------- Logo --------------------------------*/
+.logo{
+    margin: 10px;
+}
+.logo img{
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 105px;
+    height: 100px;
+    filter: drop-shadow(11px 0px 21px #00FFC2);
+}
+
+/* ------------------------------Navigation -----------------------*/
+.nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 57px;
+    left: 700px;
+    top: 40px;
+}
+.nav h6{
+    padding: 20px 40px 0px 40px;
+    height: 41px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 39px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-shadow: 5px 2px 7px #00ffc3a4;
+}
+.nav h6:hover{
+    text-shadow: none;
+   
+}
+.nav .home{
+    text-shadow: none;
+}
+
+/* ------------------------------Content-------------------------------- */
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: 250px 10px 10px 30px;
+}
+/* ---------------------------------Content left-------------------------- */
+.contleft{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin-left: 50px;
+}
+
+.contleft p{
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #00A6CB;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+}
+.contleft h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+.contleft h5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+    color: #00C9A5;
+}
+.contleft h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+.btn .pbtn{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 350px;
+    background: #008799;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.btn .pbtn:hover{
+    box-shadow: 5px 5px 10px #00D8F5;
+}
+.btn .rbtn{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 100px;
+    background: #008799;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.btn a{
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.btn .rbtn:hover{
+    box-shadow: 5px 5px 10px #00D8F5;
+}
+
+
+/*------------------------- Content Right------------------------ */
+.contright{
+    position: relative;
+    margin-top: 50px;
+}
+.contright img{
+    position: absolute;
+    width: 170px;
+    height: 449px;
+    left: 295px;
+    top: -150px;
+
+}
+.contright .rec1{
+    position: absolute;
+    width: 155px;
+    height: 269px;
+    left: 300px;
+    top: -140px;
+    z-index: -2;
+    background: #1AA673;
+    filter: blur(100px);
+}
+.contright .rec2{
+    position: absolute;
+    width: 200px;
+    height: 437px;
+    left: 315px;
+    top: -137px;
+    z-index: -3;
+    background: linear-gradient(180deg, rgba(52, 48, 255, 0) -0.8%, rgba(173, 0, 176, 0.3) 99.2%);
+
+}
+.contright .rec3{
+    box-sizing: border-box;
+    position: absolute;
+    width: 219px;
+    height: 390px;
+    left: 305px;
+    top: -80px;
+    z-index: -3;
+    border: 10px solid #FFD600;
+}
+/*-------------------------------------- About me -------------------------*/
+.aboutme{
+    display: none;
+}
+.aboutme h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.aboutme p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #03AF86;
+}
+/*------------------------ Skills -------------------------*/
+.skill{
+    margin-top: -50px;
+    display: none;
+}
+.skill h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.skill p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    color: #03AF86;
+}
+/*------------------------- Contact me----------------------- */
+.contacts{
+    display: none;
+}
+.contacts h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.contacts p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    color: #03AF86;
+}
+.contacts a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    color: #03AF86;
+    text-decoration: none;
+}
+
+/* -------------------- Responsive---------------------- */
+@media only screen and (max-width: 768px){
+    .logo img{
+        width: 65px;
+        height: 60px;
+        filter: drop-shadow(7px 0px 11px #00FFC2);
+    }
+    .nav{
+        left: 300px;
+        top: 20px;
+    }
+    .nav h6{
+        padding: 10px 20px 0px 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .contleft{
+        width: 384px;
+        margin-left: 0px;
+    }
+    .contleft p{
+        font-size: 10px;
+    }
+    .contleft h4{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .contleft h5{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .contleft h6{
+        font-size: 8px;
+        line-height: 35px;
+    }
+    .btn .pbtn{
+        width: 65px;
+        height: 20px;
+        left: 120px;
+        font-size: 10px;
+    }
+    .btn .pbtn:hover{
+        box-shadow: 5px 5px 10px #00D8F5;
+    }
+    .btn .rbtn{
+        width: 65px;
+        height: 20px;
+        left: 20px;
+        font-size: 10px;
+    }
+    .btn .rbtn:hover{
+        box-shadow: 5px 5px 10px #00D8F5;
+    }
+
+    .contright img{
+        position: absolute;
+        width: 150px;
+        height: 390px;
+        left: 50px;
+        top: -180px;
+    
+    }
+    .contright .rec1{
+        width: 81px;
+        height: 150px;
+        left: 80px;
+        top: -80px;
+    }
+    .contright .rec2{
+        position: absolute;
+        width: 190px;
+        height: 290px;
+        left: 60px;
+        top: -80px;
+    
+    }
+    .contright .rec3{
+        width: 190px;
+        height: 340px;
+        left: 60px;
+        top: -120px;
+    }
+    .aboutme h3{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .aboutme p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .skill h3{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .skill p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .contacts h3{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .contacts p{
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+/* -------------------- Responsive mobile---------------------- */
+@media only screen and (max-width: 600px){
+    .nav{
+        left: 200px;
+        top: 20px;
+    }
+    .nav h6{
+        padding: 10px 10px 0px 10px;
+        height: 10px;
+        font-size: 9px;
+    }
+    .content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;  
+        top: -100px;
+    }
+
+    .contright{
+        top: 200px;
+    }
+}
